@@ -1,5 +1,5 @@
 #!/bin/sh
 
 echo "Hellooo $INPUT_MYINPUT"
-procs=$(echo nproc)
+procs=$(nproc)
 echo "::set-output name=procs::$procs"

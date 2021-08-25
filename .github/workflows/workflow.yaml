@@ -8,11 +8,11 @@ jobs:
     - uses: actions/checkout@master
     - name: run the action
       id: hello
-      uses: ../
+      uses: ./
       with:
         myInput: 'Vignesh here'
 
     - name: output
       run: |
-        echo: ${{ steps.hello.outputs.procs }}
+        echo ${{ steps.hello.outputs.procs }}
         echo "total procs ^^"
