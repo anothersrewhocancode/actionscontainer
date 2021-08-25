@@ -8,7 +8,7 @@ jobs:
     - uses: actions/checkout@master
     - name: run the action
       id: hello
-      uses: ./
+      uses: ../
       with:
         myInput: 'Vignesh here'
 
