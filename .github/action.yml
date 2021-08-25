@@ -6,9 +6,9 @@ inputs:
     description: 'greet'
     required: true
     default: 'vignesh'
-  outputs:
-    myOutput:
-      description: 'total procs'
-  runs:
-    using: 'docker'
-    image: 'Dockerfile'
+outputs:
+  myOutput:
+    description: 'total procs'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
