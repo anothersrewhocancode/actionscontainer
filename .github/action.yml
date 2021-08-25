@@ -1,0 +1,14 @@
+name: 'my first container action'
+description: 'test piece'
+author: 'vignesh.v'
+inputs:
+  myInput:
+    description: 'greet'
+    required: true
+    default: 'vignesh'
+  outputs:
+    myOutput:
+      description: 'total procs'
+  runs:
+    using: 'docker'
+    image: 'Dockerfile'

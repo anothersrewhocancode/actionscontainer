@@ -1,0 +1,18 @@
+on: [push]
+
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+    - name: run the action
+      id: hello
+      uses: ./
+      with:
+        myInput: 'Vignesh here'
+
+    - name: output
+      run: |
+        echo: ${{ steps.hello.outputs.procs }}
+        echo "total procs ^^"
